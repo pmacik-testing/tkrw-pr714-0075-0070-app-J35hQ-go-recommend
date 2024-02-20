@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hycc
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0070-tenant/tkrw-pr714-0075-0070-app/devfile-sample-hycc@sha256:429cab191b53f4ac858c1039daaea536ccb908051dcc97226fb402a62aa36ccf
+        name: my-nodejs
+        resources: {}
+status: {}
